@@ -1,0 +1,9 @@
+{
+  "httpPort": 8080,
+  "sgbdPort": 2020,
+  "apikey": "api_key",
+  "uploadDirFile": "webroot/uploads",
+  "numberSubdir": 5,
+  "htDoc": "webroot/data",
+  "webRoot": "webroot"
+}

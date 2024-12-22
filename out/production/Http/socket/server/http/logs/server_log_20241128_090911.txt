@@ -1,0 +1,10 @@
+HTTP Server started on port 8080
+Server started on port 8080 with web root: webroot
+Client connected to root1
+Client connected to root2
+Attempting to access url : D:\L2 Itu\Reseaux\Http\webroot\root1\upload.html
+Attempting to access url : D:\L2 Itu\Reseaux\Http\webroot\root2
+Client connected to root1
+Client connected to root2
+Attempting to upload url : package.json
+Server stopped

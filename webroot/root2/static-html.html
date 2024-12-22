@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acme Corporation</title>
+</head>
+
+<body>
+<header>
+    <h1>Welcome to Acme Corporation</h1>
+    <p>Delivering Excellence Since 1985</p>
+</header>
+
+<nav>
+    <a href="#about">About Us</a>
+    <a href="#services">Services</a>
+    <a href="#team">Our Team</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section id="about">
+    <h2>About Us</h2>
+    <p>
+        Acme Corporation is a leader in innovative solutions. With over three decades of expertise,
+        we provide high-quality services to clients worldwide. Our mission is to create value through
+        innovation and commitment to excellence.
+    </p>
+</section>
+
+<section id="services">
+    <h2>Our Services</h2>
+    <div class="services">
+        <div class="service">
+            <h3>Consulting</h3>
+            <p>Our experts provide insights and strategies tailored to your business needs.</p>
+        </div>
+        <div class="service">
+            <h3>Development</h3>
+            <p>We offer cutting-edge software and hardware solutions for various industries.</p>
+        </div>
+        <div class="service">
+            <h3>Support</h3>
+            <p>Round-the-clock customer support to ensure your operations run smoothly.</p>
+        </div>
+    </div>
+</section>
+<section id="contact">
+    <h2>Contact Us</h2>
+    <form class="contact-form" action="form/traitement.php" method="get">
+        <h1>Get method : </h1>
+        <label for="nameGet">Your Name:</label>
+        <input type="text" id="nameGet" name="name" required>
+
+        <label for="emailGet">Your Email:</label>
+        <input type="email" id="emailGet" name="email" required>
+
+        <label for="messageGet">Your Message:</label>
+        <textarea id="messageGet" name="message" rows="5" required></textarea>
+        <input type="submit" value="Send Message" />
+
+
+    </form>
+    <form class="contact-form" action="form/traitement.php" method="post">
+        <h1>Post method : </h1>
+        <label for="namePost">Your Name:</label>
+        <input type="text" id="namePost" name="name" required>
+
+        <label for="emailPost">Your Email:</label>
+        <input type="email" id="emailPost" name="email" required>
+
+        <label for="messagePost">Your Message:</label>
+        <textarea id="messagePost" name="message" rows="5" required></textarea>
+
+        <input type="submit" value="Send Message" />
+    </form>
+</section>
+
+<footer>
+    <p>&copy; 2024 Acme Corporation. All rights reserved.</p>
+</footer>
+</body>
+
+</html>

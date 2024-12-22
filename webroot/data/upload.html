@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>File Upload Test</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>File Upload Test</h2>
+      <form
+        action="/upload"
+        method="POST"
+        enctype="multipart/form-data"
+        class="upload-form"
+      >
+        <div class="file-input-wrapper">
+          <input
+            type="file"
+            name="fileToUpload"
+            id="fileToUpload"
+            class="file-input"
+          />
+          <label for="fileToUpload" class="file-input-label">Choose File</label>
+          <span class="file-name">No file chosen</span>
+        </div>
+        <input
+          type="submit"
+          value="Upload File"
+          name="submit"
+          class="submit-btn"
+        />
+      </form>
+    </div>
+
+    <script>
+      const fileInput = document.getElementById("fileToUpload");
+      const fileNameSpan = document.querySelector(".file-name");
+
+      fileInput.addEventListener("change", function () {
+        if (this.files && this.files.length > 0) {
+          fileNameSpan.textContent = this.files[0].name;
+        } else {
+          fileNameSpan.textContent = "No file chosen";
+        }
+      });
+    </script>
+  </body>
+</html>
